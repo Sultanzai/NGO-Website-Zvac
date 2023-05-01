@@ -446,6 +446,7 @@ color: #878787;
   color: #fff;
 }
 #aboutimg{
+  background-image: url(images/Goal.jpg);
   background-size: cover;
   top: 20vh;
   min-height:70vh;
