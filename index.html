@@ -22,7 +22,8 @@
         <script charset="utf-8"> luxy.init(); </script>
         <link rel="stylesheet" href="css/luxy_style.css">
 
-        <!--  Links-->
+        <!-- AOS Links-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     </head>
 
@@ -87,8 +88,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-2"></div>
-                        <div class="col-md-3" id="vision1" style="background-image: url('images/Goal.jpg');"></div>
-                        <div class="col-md-4" id="vision1txt">
+                        <div class="col-md-3" id="vision1" data-aos="fade-right" data-aos-duration="3000" style="background-image: url('images/Goal.jpg');"></div>
+                        <div class="col-md-4" id="vision1txt" data-aos="fade-in" data-aos-delay="1500" data-aos-easing="ease-in-sine">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto libero voluptatibus saepe! Consequatur suscipit autem sunt labore. Esse maxime fugiat ut aspernatur laudantium ea! Nostrum voluptatem neque culpa. Explicabo, quae!
                             </p>
@@ -97,12 +98,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md"></div>
-                        <div class="col-md-4" id="vision2txt">
+                        <div class="col-md-4" id="vision2txt" data-aos="fade-in" data-aos-delay="1500" data-aos-easing="ease-in-sine">
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, harum fugit quod quisquam blanditiis explicabo voluptatibus nisi cum magnam repudiandae eius tempora ex cumque deserunt et, aliquam dolores at eveniet.
                             </p>
                         </div>
-                        <div class="col-md-3" id="vision2" style=" background-image: url('images/Goal2.jpg');
+                        <div class="col-md-3" id="vision2" data-aos="fade-left" data-aos-duration="3000" style=" background-image: url('images/Goal2.jpg');
                         "></div>
                         <div class="col-md-2"></div>
                     </div>
@@ -115,10 +116,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5" id="pur_img" style=" background-image: url(images/purpose.jpg);"></div>
+                        <div class="col-md-5" id="pur_img" data-aos="fade-up" data-aos-duration="3000" style=" background-image: url(images/purpose.jpg);"></div>
                         <div class="col-sm-1"></div>
                         
-                        <div class="col-md-5">
+                        <div class="col-md-5" data-aos="fade-in" data-aos-duration="500">
                             <div class="row"> <div class="col"><h2>Lorem ispum</h2></div></div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quod rem maiores minima nobis animi sint, dignissimos, molestiae ex hic ullam adipisci sequi esse? Accusamus iusto dignissimos vel earum eos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio totam ab facere culpa ex, unde praesentium nihil, tempora omnis aperiam voluptatibus natus quae libero ullam debitis nostrum dolore asperiores suscipit!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi minus ab quam vel excepturi quod, reiciendis voluptatibus inventore fuga velit molestiae expedita reprehenderit, sequi totam quibusdam perferendis culpa laboriosam ex!</p>
                         </div>
@@ -268,6 +269,10 @@
                         targets : '.luxy-el',
                         wrapperSpeed:  0.08
                     });
+                </script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
                 </script>
 
         </body>
