@@ -4,11 +4,11 @@
 ********************************************************* */
 :root{
   /*Colors*/
-  --bg: #e3e3e3;
-  --txt: #000000;
-  --h1: #181818;
-  --p: #ffffff;
-  --txthover: #000000;
+  --bg:  #e1ddd1;
+  --txt: #4b3b2a;
+  --h1: #fff;
+  --p: #423425;
+  --txthover: #F1DEC9;
   --black: #0d0b0b;
  }
  
@@ -196,36 +196,36 @@ h4,h5,h6 {
 ********************************************************* */
 .section2{
   max-width: 100%;
-  min-height: 250vh;
-  background-color: #ececec;
+  min-height: 200vh;
+  background-color: var(--bg);
   position: relative;
   z-index: 4;
 }
 
-.vision{
+.Goal{
   text-align: center;
   color: var(--black);
 }
-.vision h2{
+.Goal h2{
   top: 10vh;
 }
 
-#vision1{
+#Goal{
   margin: 20px;
   width:15vh;
   height: 60vh;
   top: 25vh;
   background-size: cover;
 }
-#vision1txt{
+#Goaltxt{
   margin: 20px;
   margin-top: 45vh;
   font-size: 1.3em;
-  text-align: center;
+  text-align: left;
 }
 
 
-#vision2{
+#Goal2{
   margin: 20px;
   margin-top: 20vh;
   background-size: cover;
@@ -234,11 +234,11 @@ h4,h5,h6 {
   top: 25vh;
 }
 
-#vision2txt{
+#Goaltxt2{
   margin: 20px;
   margin-top:60vh;
   font-size: 1.3em;
-  text-align: center;
+  text-align: right;
 }
 
 /* *********************************************************
@@ -246,29 +246,242 @@ h4,h5,h6 {
 ********************************************************* */
 .section3{
   max-width: 100%;
-  min-height: 100vh;
-  background-color: black;
+  min-height: 110vh;
   position: relative;
   z-index: 4;
+  background-color: var(--bg);
 }
 .purpose2{
   text-align: center;
-  color: var(--p);
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 #pur_img{
+  position: relative;
+  padding-left: 10px;
   background-size: cover;
   max-width:100%;
   min-height: 90vh;
   
 }
-.section3 p{
-  color: var(--p);
+#visiontxt{
+  font-size: 1.2em;
+  color: #392a20;
 }
 
 
-/* Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************************************************
+  Secton 4
+********************************************************* */
+
+.section4{
+  margin-top: 10vh;
+  max-width: 100%;
+  min-height: 120vh;
+}
+
+h2{
+  color: #000;
+  text-align: center;
+  font-family: sans-serif;
+}
+.date__box {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ccc;
+	border: 4px solid;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+.date__box .date__day {
+	font-size: 22px;
+}
+
+.blog-card {
+	padding: 30px;
+	position: relative;
+}
+
+.blog-card .date__box {
+	opacity: 0;
+	transform: scale(0.5);
+	transition: 300ms ease-in-out;
+}
+
+.blog-card .blog-card__background,
+  .blog-card .card__background--layer {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.blog-card .blog-card__background {
+	padding: 15px;
+	background: var(--bg);
+}
+
+.blog-card .card__background--wrapper {
+	height: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+	position: relative;
+	overflow: hidden;
+}
+
+.blog-card .card__background--main {
+	height: 100%;
+	position: relative;
+	transition: 300ms ease-in-out;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-card .card__background--layer {
+	z-index: 0;
+	opacity: 0;
+	background: rgba(51, 51, 51, 0.9);
+	transition: 300ms ease-in-out;
+}
+
+.blog-card .blog-card__head {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.blog-card .blog-card__info {
+	z-index: 10;
+	background: white;
+	padding: 40px 25px;
+}
+
+.blog-card .blog-card__info h5 {
+	transition: 300ms ease-in-out;
+  color: #000;
+}
+
+.blog-card:hover .date__box {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.blog-card:hover .card__background--main {
+	transform: scale(1.2) rotate(5deg);
+}
+
+.blog-card:hover .card__background--layer {
+	opacity: 1;
+}
+
+.blog-card:hover .blog-card__info h5 {
+	color: var(--p);
+}
+
+a.icon-link {
+	color: #363738;
+	transition: 200ms ease-in-out;
+}
+
+a.icon-link i {
+	color: #ffb535;
+}
+
+a.icon-link:hover {
+	color: #ffb535;
+	text-decoration: none;
+}
+
+.btn {
+	background: white;
+	color: #363738;
+	font-weight: bold;
+	outline: none;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	border-radius: 0;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+	padding: 0;
+	border: none;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn:hover {
+	background: #ffb535;
+	color: #fff;
+}
+
+.btn.btn--with-icon {
+	padding-right: 20px;
+}
+
+.btn.btn--with-icon i {
+	padding: 0px 30px 0px 15px;
+	margin-right: 10px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: bottom;
+	color: white;
+	background: #ffb535;
+	clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+}
+
+.btn.btn--only-icon {
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************************************************
+  Footer
+********************************************************* */
+
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -437,19 +650,26 @@ color: #878787;
 .about{  
   max-width: 100%;
   min-height: 120vh;
-  background-color: #ececec;
+  background-color:var(--bg);
   position: relative;
   z-index: 4;
 }
 #About{
   text-align: center;
-  color: #fff;
-}
+  color: var(--txt); }
+
 #aboutimg{
+  z-index: 4;
+  background-image: url(images/Work.jpg);
+  background-size: cover;
+  min-height:70vh;
+}
+
+#IMG{
   background-image: url(images/Goal.jpg);
   background-size: cover;
   top: 20vh;
-  min-height:70vh;
+  min-height:70vh
 }
 #abouttxt{
   text-align: left;
@@ -466,7 +686,7 @@ Contact us
   padding: 130px 0;
   max-width: 100%;
   min-height: 120vh;
-  background-color: #e0e0e0;
+  background-color: var(--bg);
   position: relative;
   z-index: 4;
 }
@@ -480,14 +700,14 @@ Contact us
 }
 
 .contact .heading h2 span {
-  color: #ff9100;
+  color: var(--txt);
 }
 
 .contact .heading p {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: #999999;
+  color: var(--p);
   margin: 20px 0 60px;
   padding: 0;
 }
@@ -496,17 +716,17 @@ Contact us
   padding: 25px;
   font-size: 13px;
   margin-bottom: 10px;
-  background: #f9f9f9;
+  background: #e4d2b3c7;
   border: 0;
   border-radius: 10px;
 }
-
+  
 .contact button.btn {
   padding: 10px;
   border-radius: 10px;
   font-size: 15px;
-  background: #ff9100;
-  color: #ffffff;
+  background: var(--p);
+  color: var(--h1);
 }
 
 .contact_form{
@@ -533,7 +753,7 @@ Contact us
   font-size: 30px;
   padding: 0;
   margin: 0;
-  color: #02434b;
+  color: #4b2e02;
   margin-right: 20px;
   text-align: center;
   width: 20px;
@@ -548,9 +768,6 @@ Contact us
   font-weight: 300;
   color: #999999;
 }
-
-
-
 
 
 

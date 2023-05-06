@@ -1,14 +1,7 @@
 .cover {
     background-size: cover !important;
-    margin: 10px;
     position: relative;
 }
-.cover:hover{
-    
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.649);
-    transition: ease-in-out;
-}
-
 .outline {
     outline: 1px solid;
 }

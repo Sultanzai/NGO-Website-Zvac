@@ -1,11 +1,11 @@
 :root{
- /*Colors*/
- --bg: #d0e2ad;
- --txt: #000000;
- --h1: #e6e6e6;
- --p: #ffffff;
- --boarder: #c6eea6;
- --txthover: #c7e799;
+ /*Colors*/  
+  --bg:  #ede3d4;
+  --txt: #4b3b2a;
+  --h1: #fff;
+  --p: #423425;
+  --txthover: #F1DEC9;
+  --black: #0d0b0b;
 }
 
 /* *********************************************************
@@ -27,9 +27,13 @@
             background-size: cover;
 }
 
-#bg-section01{
-    background-image: url('images/bg.jpg');
-}   
+#Hometxt{
+    font-size: 1.3em;
+    color: white;
+    
+}
+
+
 .oleo{
     
     font-family: monospace;
@@ -53,6 +57,8 @@
     position: relative;
     z-index: 2;
     padding: 45vh 0;
+    background-size: cover;
+
 }
 #section01 .content-inner{
     max-width: 600px;
