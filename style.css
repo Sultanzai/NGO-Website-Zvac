@@ -69,7 +69,7 @@ h4,h5,h6 {
 
 #top-header {
   position: fixed;
-  background: rgba(231, 233, 228, 0.958);
+  background: #fffce4f4;
   z-index: 1000;
   width: 100%;
   padding: 10px 0;
@@ -782,14 +782,14 @@ Contact us
 
 @media  only screen and (max-width: 1200px) {
   #top-header {
-    padding: 15px 20px;
+    padding: 8px 10px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #top-header {
     position: absolute;
-    padding: 8px 0;
+    padding: 0;
   }
     .letters{
         font-size: 0.8em;
@@ -802,6 +802,7 @@ Contact us
 
   #top-header .col-1-1 {
     margin: 0;
+    padding: 0;
   }
 
   .navigation ul {
@@ -874,6 +875,7 @@ Contact us
 
   ul.nested-comments li {
     margin: 0 1em;
+    padding: 0;
   }
 
   ul.nested-comments ul li {
